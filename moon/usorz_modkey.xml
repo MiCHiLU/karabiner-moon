@@ -1,9 +1,7 @@
 <?xml version="1.0"?>
 <root>
-
   {{JAPANESE_OYAYUBISHIFT_EXTRA}}
   <inputmode_only>JAPANESE</inputmode_only>
-
   <!-- Ctrol+右手アルファベットをずらす(日本語変換入力ソフトの文節操作等) -->
   <!-- 上段 -->
   <block>
@@ -35,5 +33,4 @@
   <autogen>--KeyToKey-- KeyCode::COMMA, ModifierFlag::{{MOD_KEY}}, KeyCode::M, ModifierFlag::{{MOD_KEY}}, KeyCode::VK_NONE</autogen>
   <autogen>--KeyToKey-- KeyCode::DOT, ModifierFlag::{{MOD_KEY}}, KeyCode::COMMA, ModifierFlag::{{MOD_KEY}}, KeyCode::VK_NONE</autogen>
   <autogen>--KeyToKey-- KeyCode::SLASH, ModifierFlag::{{MOD_KEY}}, KeyCode::DOT, ModifierFlag::{{MOD_KEY}}, KeyCode::VK_NONE</autogen>
-
 </root>
