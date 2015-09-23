@@ -1,35 +1,18 @@
 !!! XML
 %root
   %item
-    %name ＜ローマ字モード＞ 左シフト＝スペース, 右シフト＝右コマンド
-    %identifier remap.usorz_space_command_r
-    %include{:path => "usorz_main.xml"}
+    %name 月配列E10（E1005）
+    %identifier remap.moon_e1005
+    %include{:path => "e1005/moon.xml"}
       %replacementdef
-        %replacementname LEFT_THUMB
-        %replacementvalue KeyCode::SPACE
+        %replacementname LEFT_MIDDLE
+        %replacementvalue KeyCode::D
       %replacementdef
-        %replacementname RIGHT_THUMB
-        %replacementvalue KeyCode::COMMAND_R
-  %item
-    %name ＜ローマ字モード＞ 左シフト＝左コマンド, 右シフト＝スペース
-    %identifier remap.usorz_command_l_space
-    %include{:path => "usorz_main.xml"}
+        %replacementname RIGHT_MIDDLE
+        %replacementvalue KeyCode::K
       %replacementdef
-        %replacementname LEFT_THUMB
-        %replacementvalue KeyCode::COMMAND_L
-      %replacementdef
-        %replacementname RIGHT_THUMB
-        %replacementvalue KeyCode::SPACE
-  %item
-    %name ＜ローマ字モード＞ 左シフト＝左コマンド, 右シフト＝右コマンド
-    %identifier remap.usorz_command_l_command_r
-    %include{:path => "usorz_main.xml"}
-      %replacementdef
-        %replacementname LEFT_THUMB
-        %replacementvalue KeyCode::COMMAND_L
-      %replacementdef
-        %replacementname RIGHT_THUMB
-        %replacementvalue KeyCode::COMMAND_R
+        %replacementname RIGHT_RING
+        %replacementvalue KeyCode::L
   %item
     %name ---
   %item
@@ -48,22 +31,22 @@
     %name MOD_KEY+M , . / -> MOD_KEY+N M , .
   %item
     %name control_L+右手アルファベットをずらす
-    %identifier remap.usorz_control_l_key
-    %include{:path => "usorz_modkey.xml"}
+    %identifier remap.moon_control_l_key
+    %include{:path => "e1005/mod_key.xml"}
       %replacementdef
         %replacementname MOD_KEY
         %replacementvalue CONTROL_L
   %item
     %name command_L+右手アルファベットをずらす
-    %identifier remap.usorz_command_l_key
-    %include{:path => "usorz_modkey.xml"}
+    %identifier remap.moon_command_l_key
+    %include{:path => "e1005/mod_key.xml"}
       %replacementdef
         %replacementname MOD_KEY
         %replacementvalue COMMAND_L
   %item
     %name shift_L+右手アルファベットをずらす
-    %identifier remap.usorz_shift_l_key
-    %include{:path => "usorz_modkey.xml"}
+    %identifier remap.moon_shift_l_key
+    %include{:path => "e1005/mod_key.xml"}
       %replacementdef
         %replacementname MOD_KEY
         %replacementvalue SHIFT_L
