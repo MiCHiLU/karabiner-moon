@@ -1,0 +1,69 @@
+!!! XML
+%root
+  %item
+    %name ＜ローマ字モード＞ 左シフト＝スペース, 右シフト＝右コマンド
+    %identifier remap.usorz_space_command_r
+    %include{:path => "usorz_main.xml"}
+      %replacementdef
+        %replacementname LEFT_THUMB
+        %replacementvalue KeyCode::SPACE
+      %replacementdef
+        %replacementname RIGHT_THUMB
+        %replacementvalue KeyCode::COMMAND_R
+  %item
+    %name ＜ローマ字モード＞ 左シフト＝左コマンド, 右シフト＝スペース
+    %identifier remap.usorz_command_l_space
+    %include{:path => "usorz_main.xml"}
+      %replacementdef
+        %replacementname LEFT_THUMB
+        %replacementvalue KeyCode::COMMAND_L
+      %replacementdef
+        %replacementname RIGHT_THUMB
+        %replacementvalue KeyCode::SPACE
+  %item
+    %name ＜ローマ字モード＞ 左シフト＝左コマンド, 右シフト＝右コマンド
+    %identifier remap.usorz_command_l_command_r
+    %include{:path => "usorz_main.xml"}
+      %replacementdef
+        %replacementname LEFT_THUMB
+        %replacementvalue KeyCode::COMMAND_L
+      %replacementdef
+        %replacementname RIGHT_THUMB
+        %replacementvalue KeyCode::COMMAND_R
+  %item
+    %name ---
+  %item
+    %name 全角カンマと読点、全角ビリオドと句点をそれぞれ統合して[キーの右のキーを開放する
+    %name (P:， Z:． [:、) -> (P:、 Z:。 [:「)
+    %name (P,Zキーで≤や≥が入力されてしまう場合はチェックした方が幸せになれる)
+    %identifier remap.blandz
+  %item
+    %name Y H N -> NULL
+    %identifier remap.yhn_null
+  %item
+    %name ---
+  %item
+    %name MOD_KEY+U I O P [ ] -> MOD_KEY+Y U I O P [
+    %name MOD_KEY+J K L ; , -> MOD_KEY+H J K L ;
+    %name MOD_KEY+M , . / -> MOD_KEY+N M , .
+  %item
+    %name control_L+右手アルファベットをずらす
+    %identifier remap.usorz_control_l_key
+    %include{:path => "usorz_modkey.xml"}
+      %replacementdef
+        %replacementname MOD_KEY
+        %replacementvalue CONTROL_L
+  %item
+    %name command_L+右手アルファベットをずらす
+    %identifier remap.usorz_command_l_key
+    %include{:path => "usorz_modkey.xml"}
+      %replacementdef
+        %replacementname MOD_KEY
+        %replacementvalue COMMAND_L
+  %item
+    %name shift_L+右手アルファベットをずらす
+    %identifier remap.usorz_shift_l_key
+    %include{:path => "usorz_modkey.xml"}
+      %replacementdef
+        %replacementname MOD_KEY
+        %replacementvalue SHIFT_L

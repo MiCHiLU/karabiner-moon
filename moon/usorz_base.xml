@@ -1,9 +1,9 @@
-<?xml version="1.0"?>
+<?xml version='1.0' encoding='utf-8' ?>
 <root>
   <item>
     <name>＜ローマ字モード＞ 左シフト＝スペース, 右シフト＝右コマンド</name>
     <identifier>remap.usorz_space_command_r</identifier>
-    <include path="usorz_main.xml">
+    <include path='usorz_main.xml'>
       <replacementdef>
         <replacementname>LEFT_THUMB</replacementname>
         <replacementvalue>KeyCode::SPACE</replacementvalue>
@@ -17,7 +17,7 @@
   <item>
     <name>＜ローマ字モード＞ 左シフト＝左コマンド, 右シフト＝スペース</name>
     <identifier>remap.usorz_command_l_space</identifier>
-    <include path="usorz_main.xml">
+    <include path='usorz_main.xml'>
       <replacementdef>
         <replacementname>LEFT_THUMB</replacementname>
         <replacementvalue>KeyCode::COMMAND_L</replacementvalue>
@@ -31,7 +31,7 @@
   <item>
     <name>＜ローマ字モード＞ 左シフト＝左コマンド, 右シフト＝右コマンド</name>
     <identifier>remap.usorz_command_l_command_r</identifier>
-    <include path="usorz_main.xml">
+    <include path='usorz_main.xml'>
       <replacementdef>
         <replacementname>LEFT_THUMB</replacementname>
         <replacementvalue>KeyCode::COMMAND_L</replacementvalue>
@@ -47,7 +47,7 @@
   </item>
   <item>
     <name>全角カンマと読点、全角ビリオドと句点をそれぞれ統合して[キーの右のキーを開放する</name>
-    <name>(P:， Z:． [:、) -> (P:、 Z:。 [:「) </name>
+    <name>(P:， Z:． [:、) -> (P:、 Z:。 [:「)</name>
     <name>(P,Zキーで≤や≥が入力されてしまう場合はチェックした方が幸せになれる)</name>
     <identifier>remap.blandz</identifier>
   </item>
@@ -66,7 +66,7 @@
   <item>
     <name>control_L+右手アルファベットをずらす</name>
     <identifier>remap.usorz_control_l_key</identifier>
-    <include path="usorz_modkey.xml">
+    <include path='usorz_modkey.xml'>
       <replacementdef>
         <replacementname>MOD_KEY</replacementname>
         <replacementvalue>CONTROL_L</replacementvalue>
@@ -76,7 +76,7 @@
   <item>
     <name>command_L+右手アルファベットをずらす</name>
     <identifier>remap.usorz_command_l_key</identifier>
-    <include path="usorz_modkey.xml">
+    <include path='usorz_modkey.xml'>
       <replacementdef>
         <replacementname>MOD_KEY</replacementname>
         <replacementvalue>COMMAND_L</replacementvalue>
@@ -86,7 +86,7 @@
   <item>
     <name>shift_L+右手アルファベットをずらす</name>
     <identifier>remap.usorz_shift_l_key</identifier>
-    <include path="usorz_modkey.xml">
+    <include path='usorz_modkey.xml'>
       <replacementdef>
         <replacementname>MOD_KEY</replacementname>
         <replacementvalue>SHIFT_L</replacementvalue>

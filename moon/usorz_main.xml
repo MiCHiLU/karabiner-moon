@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version='1.0' encoding='utf-8' ?>
 <root>
   {{JAPANESE_OYAYUBISHIFT_EXTRA}}
   <inputmode_only>JAPANESE</inputmode_only>
