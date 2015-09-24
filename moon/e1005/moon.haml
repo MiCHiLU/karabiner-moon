@@ -2,6 +2,106 @@
 %root
   {{JAPANESE_MOON_EXTRA}}
   %inputmode_only JAPANESE
+
+  /　むたッてョ|つんいしけへ　　
+  /上段 左手
+  %autogen --KeyToKey-- KeyCode::Q, ModifierFlag::NONE, KeyCode::M, KeyCode::U, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::W, ModifierFlag::NONE, KeyCode::T, KeyCode::A, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::E, ModifierFlag::NONE, KeyCode::X, KeyCode::T, KeyCode::U, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::R, ModifierFlag::NONE, KeyCode::T, KeyCode::E, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::T, ModifierFlag::NONE, KeyCode::X, KeyCode::Y, KeyCode::O, KeyCode::VK_NONE
+  /上段 右手
+  %autogen --KeyToKey-- KeyCode::Y, KeyCode::T, KeyCode::U, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::U, KeyCode::N, KeyCode::N, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::I, KeyCode::I, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::O, KeyCode::S, KeyCode::I, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::P, KeyCode::K, KeyCode::E, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::BRACKET_LEFT, KeyCode::H, KeyCode::E, KeyCode::VK_NONE
+
+  /のと、かこ|くう。？なひ
+  /中段 左手
+  %autogen --KeyToKey-- KeyCode::A, ModifierFlag::NONE, KeyCode::N, KeyCode::O, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::S, ModifierFlag::NONE, KeyCode::T, KeyCode::O, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::D, ModifierFlag::NONE, KeyCode::COMMA, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::F, ModifierFlag::NONE, KeyCode::K, KeyCode::A, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::G, ModifierFlag::NONE, KeyCode::K, KeyCode::O, KeyCode::VK_NONE
+  /中段 右手
+  %autogen --KeyToKey-- KeyCode::H, KeyCode::K, KeyCode::U, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::J, KeyCode::U, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::K, ModifierFlag::NONE, KeyCode::DOT, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::L, ModifierFlag::SHIFT_L, KeyCode::SLASH, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::SEMICOLON, KeyCode::N, KeyCode::A, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::QUOTE, KeyCode::H, KeyCode::I, KeyCode::VK_NONE
+
+  /すはにでさ|まるきもー
+  /下段 左手
+  %autogen --KeyToKey-- KeyCode::Z, ModifierFlag::NONE, KeyCode::S, KeyCode::U, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::X, ModifierFlag::NONE, KeyCode::H, KeyCode::A, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::C, ModifierFlag::NONE, KeyCode::N, KeyCode::I, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::V, ModifierFlag::NONE, KeyCode::D, KeyCode::E, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::B, ModifierFlag::NONE, KeyCode::S, KeyCode::A, KeyCode::VK_NONE
+  /下段 右手
+  %autogen --KeyToKey-- KeyCode::N,     ModifierFlag::NONE, KeyCode::M, KeyCode::A, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::M,     ModifierFlag::NONE, KeyCode::R, KeyCode::U, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::COMMA, ModifierFlag::NONE, KeyCode::K, KeyCode::I, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::DOT,   ModifierFlag::NONE, KeyCode::M, KeyCode::O, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::SLASH, ModifierFlag::NONE, KeyCode::MINUS,         KeyCode::VK_NONE
+
+  /〜！＠＃＄￥＾’＊（）；：
+
+  /右手 上段
+  %autogen --KeyToKey-- KeyCode::Y, ModifierFlag::NONE, KeyCode::M, KeyCode::A, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::U, ModifierFlag::NONE, KeyCode::R, KeyCode::U, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::I, ModifierFlag::NONE, KeyCode::K, KeyCode::I, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::O, ModifierFlag::NONE, KeyCode::M, KeyCode::O, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::P, ModifierFlag::NONE, KeyCode::T, KeyCode::U, KeyCode::VK_NONE
+  %block
+    %config_not remap.blandz
+    %autogen --KeyToKey-- KeyCode::BRACKET_LEFT, ModifierFlag::NONE, KeyCode::COMMA, ModifierFlag::OPTION_L, KeyCode::VK_NONE
+    %autogen --KeyToKey-- KeyCode::BRACKET_RIGHT, ModifierFlag::NONE, KeyCode::COMMA, KeyCode::VK_NONE
+  %block
+    %config_only remap.blandz
+    %autogen --KeyToKey-- KeyCode::BRACKET_LEFT, ModifierFlag::NONE, KeyCode::COMMA, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::BRACKET_RIGHT, ModifierFlag::NONE, KeyCode::SEMICOLON, ModifierFlag::SHIFT_L, KeyCode::VK_NONE
+  / 右手 中段
+  %block
+    %config_only remap.yhn_null
+    %autogen --KeyToKey-- KeyCode::H, ModifierFlag::NONE, KeyCode::VK_NONE
+  %block
+    %config_not remap.yhn_null
+    %autogen --KeyToKey-- KeyCode::H, ModifierFlag::NONE, KeyCode::H, KeyCode::A, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::J, ModifierFlag::NONE, KeyCode::H, KeyCode::A, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::K, ModifierFlag::NONE, KeyCode::T, KeyCode::O, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::L, ModifierFlag::NONE, KeyCode::K, KeyCode::I, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::SEMICOLON, ModifierFlag::NONE, KeyCode::I, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::QUOTE, ModifierFlag::NONE, KeyCode::N, KeyCode::N, KeyCode::VK_NONE
+  / 右手 下段
+  %block
+    %config_only remap.yhn_null
+    %autogen --KeyToKey-- KeyCode::N, ModifierFlag::NONE, KeyCode::VK_NONE
+  %block
+    %config_not remap.yhn_null
+    %autogen --KeyToKey-- KeyCode::N, ModifierFlag::NONE, KeyCode::M, KeyCode::E, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::M, ModifierFlag::NONE, KeyCode::M, KeyCode::E, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::COMMA, ModifierFlag::NONE, KeyCode::S, KeyCode::O, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::DOT, ModifierFlag::NONE, KeyCode::N, KeyCode::E, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::SLASH, ModifierFlag::NONE, KeyCode::H, KeyCode::O, KeyCode::VK_NONE
+
+  / 〜！＠＃＄％＾＆＊（）＿＋
+  / 　むたッてョつんいしけへ　　
+  / 　のと、かこくう。？なひ
+  / 　すはにでさまるきもー
+
+  / 右手 上段 数字キー
+  %autogen --KeyToKey-- KeyCode::KEY_6, ModifierFlag::NONE, KeyCode::MINUS, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::KEY_7, ModifierFlag::NONE, KeyCode::KEY_6, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::KEY_8, ModifierFlag::NONE, KeyCode::KEY_7, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::KEY_9, ModifierFlag::NONE, KeyCode::KEY_8, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::KEY_0, ModifierFlag::NONE, KeyCode::KEY_9, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::MINUS, ModifierFlag::NONE, KeyCode::KEY_0, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::EQUAL, ModifierFlag::NONE, KeyCode::EQUAL, KeyCode::VK_NONE
+
+
   / 左手 上段 数字キー (順親指シフト)
   %autogen --SimultaneousKeyPresses-- {{LEFT_THUMB}}, KeyCode::BACKQUOTE, KeyCode::VK_NONE
   %autogen --SimultaneousKeyPresses-- {{LEFT_THUMB}}, KeyCode::KEY_1, KeyCode::SLASH, ModifierFlag::SHIFT_L, KeyCode::VK_NONE
@@ -16,12 +116,6 @@
   %autogen --SimultaneousKeyPresses-- {{RIGHT_THUMB}}, KeyCode::KEY_3, KeyCode::VK_NONE
   %autogen --SimultaneousKeyPresses-- {{RIGHT_THUMB}}, KeyCode::KEY_4, KeyCode::VK_NONE
   %autogen --SimultaneousKeyPresses-- {{RIGHT_THUMB}}, KeyCode::KEY_5, KeyCode::VK_NONE
-  / 左手 上段
-  %autogen --KeyToKey-- KeyCode::Q, ModifierFlag::NONE, KeyCode::DOT, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::W, ModifierFlag::NONE, KeyCode::K, KeyCode::A, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::E, ModifierFlag::NONE, KeyCode::T, KeyCode::A, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::R, ModifierFlag::NONE, KeyCode::K, KeyCode::O, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::T, ModifierFlag::NONE, KeyCode::S, KeyCode::A, KeyCode::VK_NONE
   / 左手 上段 (順親指シフト)
   %autogen --SimultaneousKeyPresses-- {{LEFT_THUMB}}, KeyCode::Q, KeyCode::X, KeyCode::A, KeyCode::VK_NONE
   %autogen --SimultaneousKeyPresses-- {{LEFT_THUMB}}, KeyCode::W, KeyCode::E, KeyCode::VK_NONE
@@ -34,12 +128,6 @@
   %autogen --SimultaneousKeyPresses-- {{RIGHT_THUMB}}, KeyCode::E, KeyCode::D, KeyCode::A, KeyCode::VK_NONE
   %autogen --SimultaneousKeyPresses-- {{RIGHT_THUMB}}, KeyCode::R, KeyCode::G, KeyCode::O, KeyCode::VK_NONE
   %autogen --SimultaneousKeyPresses-- {{RIGHT_THUMB}}, KeyCode::T, KeyCode::Z, KeyCode::A, KeyCode::VK_NONE
-  / 左手 中段
-  %autogen --KeyToKey-- KeyCode::A, ModifierFlag::NONE, KeyCode::U, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::S, ModifierFlag::NONE, KeyCode::S, KeyCode::I, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::D, ModifierFlag::NONE, KeyCode::T, KeyCode::E, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::F, ModifierFlag::NONE, KeyCode::K, KeyCode::E, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::G, ModifierFlag::NONE, KeyCode::S, KeyCode::E, KeyCode::VK_NONE
   / 左手 中段 (順親指シフト)
   %autogen --SimultaneousKeyPresses-- {{LEFT_THUMB}}, KeyCode::A, KeyCode::W, KeyCode::O, KeyCode::VK_NONE
   %autogen --SimultaneousKeyPresses-- {{LEFT_THUMB}}, KeyCode::S, KeyCode::A, KeyCode::VK_NONE
@@ -52,17 +140,6 @@
   %autogen --SimultaneousKeyPresses-- {{RIGHT_THUMB}}, KeyCode::D, KeyCode::D, KeyCode::E, KeyCode::VK_NONE
   %autogen --SimultaneousKeyPresses-- {{RIGHT_THUMB}}, KeyCode::F, KeyCode::G, KeyCode::E, KeyCode::VK_NONE
   %autogen --SimultaneousKeyPresses-- {{RIGHT_THUMB}}, KeyCode::G, KeyCode::Z, KeyCode::E, KeyCode::VK_NONE
-  / 左手 下段
-  %block
-    %config_not remap.blandz
-    %autogen --KeyToKey-- KeyCode::Z, ModifierFlag::NONE, KeyCode::DOT, ModifierFlag::OPTION_L, KeyCode::VK_NONE
-  %block
-    %config_only remap.blandz
-    %autogen --KeyToKey-- KeyCode::Z, ModifierFlag::NONE, KeyCode::DOT, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::X, ModifierFlag::NONE, KeyCode::H, KeyCode::I, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::C, ModifierFlag::NONE, KeyCode::S, KeyCode::U, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::V, ModifierFlag::NONE, KeyCode::H, KeyCode::U, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::B, ModifierFlag::NONE, KeyCode::H, KeyCode::E, KeyCode::VK_NONE
   / 左手 下段 (順親指シフト)
   %autogen --SimultaneousKeyPresses-- {{LEFT_THUMB}}, KeyCode::Z, KeyCode::X, KeyCode::U, KeyCode::VK_NONE
   %autogen --SimultaneousKeyPresses-- {{LEFT_THUMB}}, KeyCode::X, KeyCode::MINUS, KeyCode::VK_NONE
@@ -76,14 +153,6 @@
   %autogen --SimultaneousKeyPresses-- {{RIGHT_THUMB}}, KeyCode::C, KeyCode::Z, KeyCode::U, KeyCode::VK_NONE
   %autogen --SimultaneousKeyPresses-- {{RIGHT_THUMB}}, KeyCode::V, KeyCode::B, KeyCode::U, KeyCode::VK_NONE
   %autogen --SimultaneousKeyPresses-- {{RIGHT_THUMB}}, KeyCode::B, KeyCode::B, KeyCode::E, KeyCode::VK_NONE
-  / 右手 上段 数字キー
-  %autogen --KeyToKey-- KeyCode::KEY_6, ModifierFlag::NONE, KeyCode::MINUS, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::KEY_7, ModifierFlag::NONE, KeyCode::KEY_6, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::KEY_8, ModifierFlag::NONE, KeyCode::KEY_7, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::KEY_9, ModifierFlag::NONE, KeyCode::KEY_8, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::KEY_0, ModifierFlag::NONE, KeyCode::KEY_9, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::MINUS, ModifierFlag::NONE, KeyCode::KEY_0, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::EQUAL, ModifierFlag::NONE, KeyCode::EQUAL, KeyCode::VK_NONE
   / 右手 上段 数字キー (順親指シフト)
   %autogen --SimultaneousKeyPresses-- {{RIGHT_THUMB}}, KeyCode::KEY_6, KeyCode::EQUAL, KeyCode::VK_NONE
   %autogen --SimultaneousKeyPresses-- {{RIGHT_THUMB}}, KeyCode::KEY_7, KeyCode::BRACKET_LEFT, ModifierFlag::SHIFT_L, KeyCode::VK_NONE
@@ -100,25 +169,6 @@
   %autogen --SimultaneousKeyPresses-- {{LEFT_THUMB}}, KeyCode::KEY_0, KeyCode::VK_NONE
   %autogen --SimultaneousKeyPresses-- {{LEFT_THUMB}}, KeyCode::MINUS, KeyCode::VK_NONE
   %autogen --SimultaneousKeyPresses-- {{LEFT_THUMB}}, KeyCode::EQUAL, KeyCode::VK_NONE
-  / 右手 上段
-  %block
-    %config_only remap.yhn_null
-    %autogen --KeyToKey-- KeyCode::Y, ModifierFlag::NONE, KeyCode::VK_NONE
-  %block
-    %config_not remap.yhn_null
-    %autogen --KeyToKey-- KeyCode::Y, ModifierFlag::NONE, KeyCode::R, KeyCode::A, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::U, ModifierFlag::NONE, KeyCode::R, KeyCode::A, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::I, ModifierFlag::NONE, KeyCode::T, KeyCode::I, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::O, ModifierFlag::NONE, KeyCode::K, KeyCode::U, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::P, ModifierFlag::NONE, KeyCode::T, KeyCode::U, KeyCode::VK_NONE
-  %block
-    %config_not remap.blandz
-    %autogen --KeyToKey-- KeyCode::BRACKET_LEFT, ModifierFlag::NONE, KeyCode::COMMA, ModifierFlag::OPTION_L, KeyCode::VK_NONE
-    %autogen --KeyToKey-- KeyCode::BRACKET_RIGHT, ModifierFlag::NONE, KeyCode::COMMA, KeyCode::VK_NONE
-  %block
-    %config_only remap.blandz
-    %autogen --KeyToKey-- KeyCode::BRACKET_LEFT, ModifierFlag::NONE, KeyCode::COMMA, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::BRACKET_RIGHT, ModifierFlag::NONE, KeyCode::SEMICOLON, ModifierFlag::SHIFT_L, KeyCode::VK_NONE
   / 右手 上段 (順親指シフト)
   %block
     %config_only remap.yhn_null
@@ -148,18 +198,6 @@
   %autogen --SimultaneousKeyPresses-- {{LEFT_THUMB}}, KeyCode::BRACKET_LEFT, KeyCode::P, KeyCode::I, KeyCode::VK_NONE
   %autogen --SimultaneousKeyPresses-- {{LEFT_THUMB}}, KeyCode::BRACKET_RIGHT, KeyCode::SEMICOLON, KeyCode::VK_NONE
   %autogen --SimultaneousKeyPresses-- {{LEFT_THUMB}}, KeyCode::BACKSLASH, KeyCode::VK_NONE
-  / 右手 中段
-  %block
-    %config_only remap.yhn_null
-    %autogen --KeyToKey-- KeyCode::H, ModifierFlag::NONE, KeyCode::VK_NONE
-  %block
-    %config_not remap.yhn_null
-    %autogen --KeyToKey-- KeyCode::H, ModifierFlag::NONE, KeyCode::H, KeyCode::A, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::J, ModifierFlag::NONE, KeyCode::H, KeyCode::A, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::K, ModifierFlag::NONE, KeyCode::T, KeyCode::O, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::L, ModifierFlag::NONE, KeyCode::K, KeyCode::I, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::SEMICOLON, ModifierFlag::NONE, KeyCode::I, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::QUOTE, ModifierFlag::NONE, KeyCode::N, KeyCode::N, KeyCode::VK_NONE
   / 右手 中段 (順親指シフト)
   %block
     %config_only remap.yhn_null
@@ -184,17 +222,6 @@
   %autogen --SimultaneousKeyPresses-- {{LEFT_THUMB}}, KeyCode::L, KeyCode::G, KeyCode::I, KeyCode::VK_NONE
   %autogen --SimultaneousKeyPresses-- {{LEFT_THUMB}}, KeyCode::SEMICOLON, KeyCode::P, KeyCode::O, KeyCode::VK_NONE
   %autogen --SimultaneousKeyPresses-- {{LEFT_THUMB}}, KeyCode::QUOTE, KeyCode::QUOTE, KeyCode::VK_NONE
-  / 右手 下段
-  %block
-    %config_only remap.yhn_null
-    %autogen --KeyToKey-- KeyCode::N, ModifierFlag::NONE, KeyCode::VK_NONE
-  %block
-    %config_not remap.yhn_null
-    %autogen --KeyToKey-- KeyCode::N, ModifierFlag::NONE, KeyCode::M, KeyCode::E, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::M, ModifierFlag::NONE, KeyCode::M, KeyCode::E, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::COMMA, ModifierFlag::NONE, KeyCode::S, KeyCode::O, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::DOT, ModifierFlag::NONE, KeyCode::N, KeyCode::E, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::SLASH, ModifierFlag::NONE, KeyCode::H, KeyCode::O, KeyCode::VK_NONE
   / 右手 下段 (順親指シフト)
   %block
     %config_only remap.yhn_null
