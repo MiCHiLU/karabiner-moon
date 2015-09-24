@@ -3,46 +3,67 @@
   -#{{JAPANESE_MOON_EXTRA}}
   %inputmode_only JAPANESE
 
-  /　むたッてョ|つんいしけへ　　
+  /シフトなし
+
+  /`12345|67890-=
+  /上段 数字キー 左手
+  %autogen --KeyToKey-- KeyCode::BACKQUOTE, ModifierFlag::NONE, KeyCode::BACKQUOTE, KeyCode::F10, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::KEY_1,     ModifierFlag::NONE, KeyCode::KEYPAD_1,  KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::KEY_2,     ModifierFlag::NONE, KeyCode::KEYPAD_2,  KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::KEY_3,     ModifierFlag::NONE, KeyCode::KEYPAD_3,  KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::KEY_4,     ModifierFlag::NONE, KeyCode::KEYPAD_4,  KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::KEY_5,     ModifierFlag::NONE, KeyCode::KEYPAD_5,  KeyCode::VK_NONE
+  /上段 数字キー 右手
+  %autogen --KeyToKey-- KeyCode::KEY_6, ModifierFlag::NONE, KeyCode::KEYPAD_6,      KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::KEY_7, ModifierFlag::NONE, KeyCode::KEYPAD_7,      KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::KEY_8, ModifierFlag::NONE, KeyCode::KEYPAD_8,      KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::KEY_9, ModifierFlag::NONE, KeyCode::KEYPAD_9,      KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::KEY_0, ModifierFlag::NONE, KeyCode::KEYPAD_0,      KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::MINUS, ModifierFlag::NONE, KeyCode::KEYPAD_MINUS,  KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::EQUAL, ModifierFlag::NONE, KeyCode::KEYPAD_EQUAL,  KeyCode::VK_NONE
+
+  /むたッてョ|つんいしけへ　　
   /上段 左手
-  %autogen --KeyToKey-- KeyCode::Q, ModifierFlag::NONE, KeyCode::M, KeyCode::U,             KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::W, ModifierFlag::NONE, KeyCode::T, KeyCode::A,             KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::E, ModifierFlag::NONE, KeyCode::X, KeyCode::T, KeyCode::U, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::R, ModifierFlag::NONE, KeyCode::T, KeyCode::E,             KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::T, ModifierFlag::NONE, KeyCode::X, KeyCode::Y, KeyCode::O, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::Q, ModifierFlag::NONE,                             KeyCode::BACKSLASH, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::W, ModifierFlag::NONE,                             KeyCode::Q,         KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::E, ModifierFlag::NONE, KeyCode::VK_STICKY_SHIFT_L, KeyCode::Z,         KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::R, ModifierFlag::NONE,                             KeyCode::W,         KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::T, ModifierFlag::NONE, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_9,     KeyCode::VK_NONE
   /上段 右手
-  %autogen --KeyToKey-- KeyCode::Y,             ModifierFlag::NONE, KeyCode::T, KeyCode::U, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::U,             ModifierFlag::NONE, KeyCode::N, KeyCode::N, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::I,             ModifierFlag::NONE, KeyCode::I,             KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::O,             ModifierFlag::NONE, KeyCode::S, KeyCode::I, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::P,             ModifierFlag::NONE, KeyCode::K, KeyCode::E, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::BRACKET_LEFT,  ModifierFlag::NONE, KeyCode::H, KeyCode::E, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::Y,             ModifierFlag::NONE, KeyCode::Z,     KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::U,             ModifierFlag::NONE, KeyCode::Y,     KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::I,             ModifierFlag::NONE, KeyCode::E,     KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::O,             ModifierFlag::NONE, KeyCode::D,     KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::P,             ModifierFlag::NONE, KeyCode::QUOTE, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::BRACKET_LEFT,  ModifierFlag::NONE, KeyCode::EQUAL, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::BRACKET_RIGHT, ModifierFlag::NONE,                 KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::BACKSLASH, ModifierFlag::NONE,                     KeyCode::VK_NONE
 
   /のと、かこ|くう。？なひ
   /中段 左手
-  %autogen --KeyToKey-- KeyCode::A, ModifierFlag::NONE, KeyCode::N, KeyCode::O, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::S, ModifierFlag::NONE, KeyCode::T, KeyCode::O, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::D, ModifierFlag::NONE, KeyCode::COMMA,         KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::F, ModifierFlag::NONE, KeyCode::K, KeyCode::A, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::G, ModifierFlag::NONE, KeyCode::K, KeyCode::O, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::A, ModifierFlag::NONE,                             KeyCode::K,     KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::S, ModifierFlag::NONE,                             KeyCode::S,     KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::D, ModifierFlag::NONE, KeyCode::VK_STICKY_SHIFT_L, KeyCode::COMMA, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::F, ModifierFlag::NONE,                             KeyCode::T,     KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::G, ModifierFlag::NONE,                             KeyCode::B,     KeyCode::VK_NONE
   /中段 右手
-  %autogen --KeyToKey-- KeyCode::H,         ModifierFlag::NONE,     KeyCode::K, KeyCode::U, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::J,         ModifierFlag::NONE,     KeyCode::U,             KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::K,         ModifierFlag::NONE,     KeyCode::DOT,           KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::L,         ModifierFlag::SHIFT_L,  KeyCode::SLASH,         KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::SEMICOLON, ModifierFlag::NONE,     KeyCode::N, KeyCode::A, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::QUOTE,     ModifierFlag::NONE,     KeyCode::H, KeyCode::I, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::H,         ModifierFlag::NONE,                             KeyCode::H,                   KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::J,         ModifierFlag::NONE,                             KeyCode::KEY_4,               KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::K,         ModifierFlag::NONE, KeyCode::VK_STICKY_SHIFT_L, KeyCode::DOT,                 KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::L,         ModifierFlag::NONE, KeyCode::VK_STICKY_SHIFT_L, KeyCode::SLASH, KeyCode::F9,  KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::SEMICOLON, ModifierFlag::NONE,                             KeyCode::U,                   KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::QUOTE,     ModifierFlag::NONE,                             KeyCode::V,                   KeyCode::VK_NONE
 
   /すはにでさ|まるきもー
   /下段 左手
-  %autogen --KeyToKey-- KeyCode::Z, ModifierFlag::NONE, KeyCode::S, KeyCode::U, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::X, ModifierFlag::NONE, KeyCode::H, KeyCode::A, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::C, ModifierFlag::NONE, KeyCode::N, KeyCode::I, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::V, ModifierFlag::NONE, KeyCode::D, KeyCode::E, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::B, ModifierFlag::NONE, KeyCode::S, KeyCode::A, KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::Z, ModifierFlag::NONE, KeyCode::R,                         KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::X, ModifierFlag::NONE, KeyCode::F,                         KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::C, ModifierFlag::NONE, KeyCode::I,                         KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::V, ModifierFlag::NONE, KeyCode::W, KeyCode::BRACKET_LEFT,  KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::B, ModifierFlag::NONE, KeyCode::X,                         KeyCode::VK_NONE
   /下段 右手
-  %autogen --KeyToKey-- KeyCode::N,     ModifierFlag::NONE, KeyCode::M, KeyCode::A, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::M,     ModifierFlag::NONE, KeyCode::R, KeyCode::U, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::COMMA, ModifierFlag::NONE, KeyCode::K, KeyCode::I, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::DOT,   ModifierFlag::NONE, KeyCode::M, KeyCode::O, KeyCode::VK_NONE
-  %autogen --KeyToKey-- KeyCode::SLASH, ModifierFlag::NONE, KeyCode::MINUS,         KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::N,     ModifierFlag::NONE, KeyCode::J,       KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::M,     ModifierFlag::NONE, KeyCode::DOT,     KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::COMMA, ModifierFlag::NONE, KeyCode::G,       KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::DOT,   ModifierFlag::NONE, KeyCode::M,       KeyCode::VK_NONE
+  %autogen --KeyToKey-- KeyCode::SLASH, ModifierFlag::NONE, KeyCode::VK_JIS_YEN, KeyCode::VK_NONE
