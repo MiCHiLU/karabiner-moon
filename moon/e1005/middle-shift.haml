@@ -26,20 +26,20 @@
 
     /ぼごれよ！|ぐちュせめづ　　
     /上段 左手
-    %autogen __HoldingKeyToKey__ KeyCode::Q, KeyCode::MINUS, KeyCode::BRACKET_LEFT
-    %autogen __HoldingKeyToKey__ KeyCode::W, KeyCode::B, KeyCode::BRACKET_LEFT
-    %autogen __HoldingKeyToKey__ KeyCode::E, KeyCode::SEMICOLON
-    %autogen __HoldingKeyToKey__ KeyCode::R, KeyCode::KEY_9
-    %autogen __HoldingKeyToKey__ KeyCode::T, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_1
+    %autogen __HoldingKeyToKey__ KeyCode::Q, ModifierFlag::NONE, KeyCode::MINUS, KeyCode::BRACKET_LEFT
+    %autogen __HoldingKeyToKey__ KeyCode::W, ModifierFlag::NONE, KeyCode::B, KeyCode::BRACKET_LEFT
+    %autogen __HoldingKeyToKey__ KeyCode::E, ModifierFlag::NONE, KeyCode::SEMICOLON
+    %autogen __HoldingKeyToKey__ KeyCode::R, ModifierFlag::NONE, KeyCode::KEY_9
+    %autogen __HoldingKeyToKey__ KeyCode::T, ModifierFlag::NONE, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_1, KeyCode::F9
     /上段 右手
-    %autogen __HoldingKeyToKey__ KeyCode::Y, KeyCode::H, KeyCode::BRACKET_LEFT
-    %autogen __HoldingKeyToKey__ KeyCode::U, KeyCode::A
-    %autogen __HoldingKeyToKey__ KeyCode::I, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_8
-    %autogen __HoldingKeyToKey__ KeyCode::O, KeyCode::P
-    %autogen __HoldingKeyToKey__ KeyCode::P, KeyCode::SLASH
-    %autogen __HoldingKeyToKey__ KeyCode::BRACKET_LEFT, KeyCode::Z, KeyCode::BRACKET_LEFT
-    %autogen __HoldingKeyToKey__ KeyCode::BRACKET_RIGHT
-    %autogen __HoldingKeyToKey__ KeyCode::BACKSLASH
+    %autogen __HoldingKeyToKey__ KeyCode::Y, ModifierFlag::NONE, KeyCode::H, KeyCode::BRACKET_LEFT
+    %autogen __HoldingKeyToKey__ KeyCode::U, ModifierFlag::NONE, KeyCode::A
+    %autogen __HoldingKeyToKey__ KeyCode::I, ModifierFlag::NONE, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_8
+    %autogen __HoldingKeyToKey__ KeyCode::O, ModifierFlag::NONE, KeyCode::P
+    %autogen __HoldingKeyToKey__ KeyCode::P, ModifierFlag::NONE, KeyCode::SLASH
+    %autogen __HoldingKeyToKey__ KeyCode::BRACKET_LEFT, ModifierFlag::NONE, KeyCode::Z, KeyCode::BRACKET_LEFT
+    -#%autogen __HoldingKeyToKey__ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE, KeyCode::VK_NONE
+    -#%autogen __HoldingKeyToKey__ KeyCode::BACKSLASH,     ModifierFlag::NONE, KeyCode::VK_NONE
 
     /えあおがを|わらりみそぬ
     /中段 左手
@@ -60,11 +60,11 @@
     /下段 左手
     %autogen __HoldingKeyToKey__ KeyCode::Z, ModifierFlag::NONE, KeyCode::KEY_8
     %autogen __HoldingKeyToKey__ KeyCode::X, ModifierFlag::NONE, KeyCode::COMMA
-    %autogen __HoldingKeyToKey__ KeyCode::C, ModifierFlag::NONE, KeyCode::SEMICOLON, KeyCode::BRACKET_LEFT
+    %autogen __HoldingKeyToKey__ KeyCode::C, ModifierFlag::NONE, KeyCode::QUOTE, KeyCode::BRACKET_LEFT
     %autogen __HoldingKeyToKey__ KeyCode::V, ModifierFlag::NONE, KeyCode::MINUS
-    %autogen __HoldingKeyToKey__ KeyCode::B, ModifierFlag::NONE, KeyCode::SLASH
+    %autogen __HoldingKeyToKey__ KeyCode::B, ModifierFlag::NONE, KeyCode::BACKQUOTE
     /下段 右手
-    %autogen __HoldingKeyToKey__ KeyCode::N, ModifierFlag::NONE, KeyCode::VK_STICKY_SHIFT_L,  KeyCode::KEY_7
+    %autogen __HoldingKeyToKey__ KeyCode::N,     ModifierFlag::NONE, KeyCode::VK_STICKY_SHIFT_L,  KeyCode::KEY_7
     %autogen __HoldingKeyToKey__ KeyCode::M,     ModifierFlag::NONE, KeyCode::KEY_2
     %autogen __HoldingKeyToKey__ KeyCode::COMMA, ModifierFlag::NONE, KeyCode::KEY_7
     %autogen __HoldingKeyToKey__ KeyCode::DOT,   ModifierFlag::NONE, KeyCode::EQUAL, KeyCode::BRACKET_LEFT
