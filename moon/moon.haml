@@ -3,15 +3,18 @@
   %item
     %name 月配列E10（E1005）
     %identifier remap.moon_e1005
-    %include{:path => "e1005/moon.xml"}
+    %include{:path => "e1005/non-shift.xml"}
+    %include{:path => "e1005/middle-shift.xml"}
       %replacementdef
-        %replacementname LEFT_MIDDLE
+        %replacementname MIDDLE
         %replacementvalue KeyCode::D
+    %include{:path => "e1005/middle-shift.xml"}
       %replacementdef
-        %replacementname RIGHT_MIDDLE
+        %replacementname MIDDLE
         %replacementvalue KeyCode::K
+    %include{:path => "e1005/ring-shift.xml"}
       %replacementdef
-        %replacementname RIGHT_RING
+        %replacementname RING
         %replacementvalue KeyCode::L
   %item
     %name ---
