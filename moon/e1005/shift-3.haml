@@ -2,71 +2,69 @@
 %root
   -#{{JAPANESE_MOON_EXTRA}}
   %inputmode_only JAPANESE
+  %not PASSWORD
 
-  %block
-    /薬指シフト
-    %lastpressedphysicalkey_only {{RING}}
-    %elapsedtimesincelastreleased_lessthan Millisecond::RawValue::1000
+  /薬指シフト
 
-    -#/上段 左手 数字キー
-    -#%autogen __HoldingKeyToKey__ KeyCode::BACKQUOTE, ModifierFlag::NONE, KeyCode::BACKQUOTE
-    -#%autogen __HoldingKeyToKey__ KeyCode::KEY_1,     ModifierFlag::NONE, KeyCode::KEY_1
-    -#%autogen __HoldingKeyToKey__ KeyCode::KEY_2,     ModifierFlag::NONE, KeyCode::KEY_2
-    -#%autogen __HoldingKeyToKey__ KeyCode::KEY_3,     ModifierFlag::NONE, KeyCode::KEY_3
-    -#%autogen __HoldingKeyToKey__ KeyCode::KEY_4,     ModifierFlag::NONE, KeyCode::KEY_4
-    -#%autogen __HoldingKeyToKey__ KeyCode::KEY_5,     ModifierFlag::NONE, KeyCode::KEY_5
-    -#/上段 右手 数字キー
-    -#%autogen __HoldingKeyToKey__ KeyCode::KEY_6, ModifierFlag::NONE, KeyCode::KEY_6
-    -#%autogen __HoldingKeyToKey__ KeyCode::KEY_7, ModifierFlag::NONE, KeyCode::KEY_7
-    -#%autogen __HoldingKeyToKey__ KeyCode::KEY_8, ModifierFlag::NONE, KeyCode::KEY_8
-    -#%autogen __HoldingKeyToKey__ KeyCode::KEY_9, ModifierFlag::NONE, KeyCode::KEY_9
-    -#%autogen __HoldingKeyToKey__ KeyCode::KEY_0, ModifierFlag::NONE, KeyCode::KEY_0
-    -#%autogen __HoldingKeyToKey__ KeyCode::MINUS, ModifierFlag::NONE, KeyCode::MINUS
-    -#%autogen __HoldingKeyToKey__ KeyCode::EQUAL, ModifierFlag::NONE, KeyCode::EQUAL
+  -#/上段 左手 数字キー
+  -#%autogen __KeyToKey__ KeyCode::BACKQUOTE, ModifierFlag::NONE, KeyCode::BACKQUOTE
+  -#%autogen __KeyToKey__ KeyCode::KEY_1,     ModifierFlag::NONE, KeyCode::KEY_1
+  -#%autogen __KeyToKey__ KeyCode::KEY_2,     ModifierFlag::NONE, KeyCode::KEY_2
+  -#%autogen __KeyToKey__ KeyCode::KEY_3,     ModifierFlag::NONE, KeyCode::KEY_3
+  -#%autogen __KeyToKey__ KeyCode::KEY_4,     ModifierFlag::NONE, KeyCode::KEY_4
+  -#%autogen __KeyToKey__ KeyCode::KEY_5,     ModifierFlag::NONE, KeyCode::KEY_5
+  -#/上段 右手 数字キー
+  -#%autogen __KeyToKey__ KeyCode::KEY_6, ModifierFlag::NONE, KeyCode::KEY_6
+  -#%autogen __KeyToKey__ KeyCode::KEY_7, ModifierFlag::NONE, KeyCode::KEY_7
+  -#%autogen __KeyToKey__ KeyCode::KEY_8, ModifierFlag::NONE, KeyCode::KEY_8
+  -#%autogen __KeyToKey__ KeyCode::KEY_9, ModifierFlag::NONE, KeyCode::KEY_9
+  -#%autogen __KeyToKey__ KeyCode::KEY_0, ModifierFlag::NONE, KeyCode::KEY_0
+  -#%autogen __KeyToKey__ KeyCode::MINUS, ModifierFlag::NONE, KeyCode::MINUS
+  -#%autogen __KeyToKey__ KeyCode::EQUAL, ModifierFlag::NONE, KeyCode::EQUAL
 
-    /ぢヴ笑草・|
-    /
-    /上段 左手
-    %autogen __HoldingKeyToKey__ KeyCode::Q, ModifierFlag::NONE, KeyCode::A, KeyCode::BRACKET_LEFT
-    %autogen __HoldingKeyToKey__ KeyCode::W, ModifierFlag::NONE, KeyCode::KEY_4, KeyCode::BRACKET_LEFT
-    -#%autogen __HoldingKeyToKey__ KeyCode::E, ModifierFlag::NONE, KeyCode::E
-    -#%autogen __HoldingKeyToKey__ KeyCode::R, ModifierFlag::NONE, KeyCode::R
-    %autogen __HoldingKeyToKey__ KeyCode::T, KeyCode::VK_STICKY_SHIFT_L, KeyCode::SLASH
-    -#/上段 右手
-    -#%autogen __HoldingKeyToKey__ KeyCode::Y, ModifierFlag::NONE, KeyCode::Y
-    -#%autogen __HoldingKeyToKey__ KeyCode::U, ModifierFlag::NONE, KeyCode::U
-    -#%autogen __HoldingKeyToKey__ KeyCode::I, ModifierFlag::NONE, KeyCode::I
-    -#%autogen __HoldingKeyToKey__ KeyCode::O, ModifierFlag::NONE, KeyCode::O
-    -#%autogen __HoldingKeyToKey__ KeyCode::P, ModifierFlag::NONE, KeyCode::P
-    -#%autogen __HoldingKeyToKey__ KeyCode::BRACKET_LEFT, ModifierFlag::NONE, KeyCode::BRACKET_LEFT
-    -#%autogen __HoldingKeyToKey__ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
-    -#%autogen __HoldingKeyToKey__ KeyCode::BACKSLASH,     ModifierFlag::NONE
+  /ぢヴ笑草・|
+  /
+  /上段 左手
+  %autogen __KeyToKey__ KeyCode::Q, ModifierFlag::NONE, KeyCode::A, KeyCode::BRACKET_LEFT
+  %autogen __KeyToKey__ KeyCode::W, ModifierFlag::NONE, KeyCode::KEY_4, KeyCode::BRACKET_LEFT
+  -#%autogen __KeyToKey__ KeyCode::E, ModifierFlag::NONE, KeyCode::E
+  -#%autogen __KeyToKey__ KeyCode::R, ModifierFlag::NONE, KeyCode::R
+  %autogen __KeyToKey__ KeyCode::T, KeyCode::VK_STICKY_SHIFT_L, KeyCode::SLASH
+  -#/上段 右手
+  -#%autogen __KeyToKey__ KeyCode::Y, ModifierFlag::NONE, KeyCode::Y
+  -#%autogen __KeyToKey__ KeyCode::U, ModifierFlag::NONE, KeyCode::U
+  -#%autogen __KeyToKey__ KeyCode::I, ModifierFlag::NONE, KeyCode::I
+  -#%autogen __KeyToKey__ KeyCode::O, ModifierFlag::NONE, KeyCode::O
+  -#%autogen __KeyToKey__ KeyCode::P, ModifierFlag::NONE, KeyCode::P
+  -#%autogen __KeyToKey__ KeyCode::BRACKET_LEFT, ModifierFlag::NONE, KeyCode::BRACKET_LEFT
+  -#%autogen __KeyToKey__ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
+  -#%autogen __KeyToKey__ KeyCode::BACKSLASH,     ModifierFlag::NONE
 
-    /ァィゥェォ|
-    /中段 左手
-    %autogen __HoldingKeyToKey__ KeyCode::A, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_3
-    %autogen __HoldingKeyToKey__ KeyCode::S, KeyCode::VK_STICKY_SHIFT_L, KeyCode::E
-    %autogen __HoldingKeyToKey__ KeyCode::D, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_4
-    %autogen __HoldingKeyToKey__ KeyCode::F, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_5
-    %autogen __HoldingKeyToKey__ KeyCode::G, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_6
-    -#/中段 右手
-    -#%autogen __HoldingKeyToKey__ KeyCode::H,         ModifierFlag::NONE, KeyCode::H
-    -#%autogen __HoldingKeyToKey__ KeyCode::J,         ModifierFlag::NONE, KeyCode::J
-    -#%autogen __HoldingKeyToKey__ KeyCode::K,         ModifierFlag::NONE, KeyCode::K
-    -#%autogen __HoldingKeyToKey__ KeyCode::L,         ModifierFlag::NONE, KeyCode::L
-    -#%autogen __HoldingKeyToKey__ KeyCode::SEMICOLON, ModifierFlag::NONE, KeyCode::SEMICOLON
-    -#%autogen __HoldingKeyToKey__ KeyCode::QUOTE,     ModifierFlag::NONE, KeyCode::QUOTE
+  /ァィゥェォ|
+  /中段 左手
+  %autogen __KeyToKey__ KeyCode::A, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_3
+  %autogen __KeyToKey__ KeyCode::S, KeyCode::VK_STICKY_SHIFT_L, KeyCode::E
+  %autogen __KeyToKey__ KeyCode::D, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_4
+  %autogen __KeyToKey__ KeyCode::F, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_5
+  %autogen __KeyToKey__ KeyCode::G, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_6
+  -#/中段 右手
+  -#%autogen __KeyToKey__ KeyCode::H,         ModifierFlag::NONE, KeyCode::H
+  -#%autogen __KeyToKey__ KeyCode::J,         ModifierFlag::NONE, KeyCode::J
+  -#%autogen __KeyToKey__ KeyCode::K,         ModifierFlag::NONE, KeyCode::K
+  -#%autogen __KeyToKey__ KeyCode::L,         ModifierFlag::NONE, KeyCode::L
+  -#%autogen __KeyToKey__ KeyCode::SEMICOLON, ModifierFlag::NONE, KeyCode::SEMICOLON
+  -#%autogen __KeyToKey__ KeyCode::QUOTE,     ModifierFlag::NONE, KeyCode::QUOTE
 
-    /　　＜＞…|
-    /下段 左手
-    -#%autogen __HoldingKeyToKey__ KeyCode::Z, ModifierFlag::NONE, KeyCode::Z
-    -#%autogen __HoldingKeyToKey__ KeyCode::X, ModifierFlag::NONE, KeyCode::X
-    %autogen __HoldingKeyToKey__ KeyCode::C, KeyCode::VK_STICKY_SHIFT_L, KeyCode::COMMA
-    %autogen __HoldingKeyToKey__ KeyCode::V, KeyCode::VK_STICKY_SHIFT_L, KeyCode::DOT
-    %autogen __HoldingKeyToKey__ KeyCode::B, ModifierFlag::OPTION_L, KeyCode::SEMICOLON
-    -#/下段 右手
-    -#%autogen __HoldingKeyToKey__ KeyCode::N,     ModifierFlag::NONE, KeyCode::N
-    -#%autogen __HoldingKeyToKey__ KeyCode::M,     ModifierFlag::NONE, KeyCode::M
-    -#%autogen __HoldingKeyToKey__ KeyCode::COMMA, ModifierFlag::NONE, KeyCode::COMMA
-    -#%autogen __HoldingKeyToKey__ KeyCode::DOT,   ModifierFlag::NONE, KeyCode::DOT
-    -#%autogen __HoldingKeyToKey__ KeyCode::SLASH, ModifierFlag::NONE, KeyCode::SLASH
+  /　　＜＞…|
+  /下段 左手
+  -#%autogen __KeyToKey__ KeyCode::Z, ModifierFlag::NONE, KeyCode::Z
+  -#%autogen __KeyToKey__ KeyCode::X, ModifierFlag::NONE, KeyCode::X
+  %autogen __KeyToKey__ KeyCode::C, KeyCode::VK_STICKY_SHIFT_L, KeyCode::COMMA
+  %autogen __KeyToKey__ KeyCode::V, KeyCode::VK_STICKY_SHIFT_L, KeyCode::DOT
+  %autogen __KeyToKey__ KeyCode::B, ModifierFlag::OPTION_L, KeyCode::SEMICOLON
+  -#/下段 右手
+  -#%autogen __KeyToKey__ KeyCode::N,     ModifierFlag::NONE, KeyCode::N
+  -#%autogen __KeyToKey__ KeyCode::M,     ModifierFlag::NONE, KeyCode::M
+  -#%autogen __KeyToKey__ KeyCode::COMMA, ModifierFlag::NONE, KeyCode::COMMA
+  -#%autogen __KeyToKey__ KeyCode::DOT,   ModifierFlag::NONE, KeyCode::DOT
+  -#%autogen __KeyToKey__ KeyCode::SLASH, ModifierFlag::NONE, KeyCode::SLASH
