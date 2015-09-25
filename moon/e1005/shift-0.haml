@@ -4,11 +4,6 @@
   %inputmode_only JAPANESE
   %not PASSWORD
 
-  /シフト文字
-  %autogen __KeyToKey__ KeyCode::D, KeyCode::VK_MODIFIER_D
-  %autogen __KeyToKey__ KeyCode::K, KeyCode::VK_MODIFIER_K
-  %autogen __KeyToKey__ KeyCode::L, KeyCode::VK_MODIFIER_L
-
   /シフトなし
 
   /`12345|67890-=
@@ -49,20 +44,17 @@
   /中段 左手
   %autogen __KeyToKey__ KeyCode::A, ModifierFlag::NONE,     KeyCode::K
   %autogen __KeyToKey__ KeyCode::S, ModifierFlag::NONE,     KeyCode::S
-  %autogen __KeyToKey__ KeyCode::D, ModifierFlag::NONE,     KeyCode::VK_NONE
-  %autogen __KeyToKey__ KeyCode::D, ModifierFlag::SHIFT_L,  KeyCode::VK_STICKY_SHIFT_L, KeyCode::COMMA
   %autogen __KeyToKey__ KeyCode::D, ModifierFlag::SHIFT_R,  KeyCode::VK_STICKY_SHIFT_L, KeyCode::COMMA
+  %autogen __KeyToKey__ KeyCode::D, ModifierFlag::NONE, KeyCode::SHIFT_R
   %autogen __KeyToKey__ KeyCode::F, ModifierFlag::NONE, KeyCode::T
   %autogen __KeyToKey__ KeyCode::G, ModifierFlag::NONE, KeyCode::B
   /中段 右手
   %autogen __KeyToKey__ KeyCode::H,         ModifierFlag::NONE,     KeyCode::H
   %autogen __KeyToKey__ KeyCode::J,         ModifierFlag::NONE,     KeyCode::KEY_4
-  %autogen __KeyToKey__ KeyCode::K,         ModifierFlag::NONE,     KeyCode::VK_NONE
-  %autogen __KeyToKey__ KeyCode::K,         ModifierFlag::SHIFT_L,  KeyCode::VK_STICKY_SHIFT_L, KeyCode::DOT
-  %autogen __KeyToKey__ KeyCode::K,         ModifierFlag::SHIFT_R,  KeyCode::VK_STICKY_SHIFT_L, KeyCode::DOT
-  %autogen __KeyToKey__ KeyCode::L,         ModifierFlag::NONE,     KeyCode::VK_NONE
-  %autogen __KeyToKey__ KeyCode::L,         ModifierFlag::SHIFT_L,  KeyCode::VK_STICKY_SHIFT_L, KeyCode::SLASH, KeyCode::F9
-  %autogen __KeyToKey__ KeyCode::L,         ModifierFlag::SHIFT_R,  KeyCode::VK_STICKY_SHIFT_L, KeyCode::SLASH, KeyCode::F9
+  %autogen __KeyToKey__ KeyCode::K, ModifierFlag::SHIFT_L,  KeyCode::VK_STICKY_SHIFT_L, KeyCode::DOT
+  %autogen __KeyToKey__ KeyCode::K, ModifierFlag::NONE, KeyCode::SHIFT_L
+  %autogen __KeyToKey__ KeyCode::L, ModifierFlag::SHIFT_L,  KeyCode::VK_STICKY_SHIFT_L, KeyCode::SLASH, KeyCode::F9
+  %autogen __KeyToKey__ KeyCode::L, ModifierFlag::NONE, KeyCode::SHIFT_L
   %autogen __KeyToKey__ KeyCode::SEMICOLON, ModifierFlag::NONE,     KeyCode::U
   %autogen __KeyToKey__ KeyCode::QUOTE,     ModifierFlag::NONE,     KeyCode::V
 

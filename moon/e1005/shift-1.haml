@@ -4,67 +4,67 @@
   %inputmode_only JAPANESE
   %not PASSWORD
 
-  /薬指シフト
+  /中指シフト
 
   /　～＠＃＄￥|＾’＊（）；：
   /上段 左手 数字キー
-  %autogen __KeyToKey__ KeyCode::BACKQUOTE, ModifierFlag::{{MIDDLE}}, KeyCode::VK_NONE
-  %autogen __KeyToKey__ KeyCode::KEY_1,     ModifierFlag::{{MIDDLE}}, KeyCode::VK_STICKY_SHIFT_L, KeyCode::BACKQUOTE
-  %autogen __KeyToKey__ KeyCode::KEY_2,     ModifierFlag::{{MIDDLE}},                             KeyCode::JIS_ATMARK
-  %autogen __KeyToKey__ KeyCode::KEY_3,     ModifierFlag::{{MIDDLE}}, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_3
-  %autogen __KeyToKey__ KeyCode::KEY_4,     ModifierFlag::{{MIDDLE}}, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_4
-  %autogen __KeyToKey__ KeyCode::KEY_5,     ModifierFlag::{{MIDDLE}},                             KeyCode::JIS_YEN
+  %autogen __KeyToKey__ KeyCode::BACKQUOTE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::VK_NONE
+  %autogen __KeyToKey__ KeyCode::KEY_1,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::VK_STICKY_SHIFT_L, KeyCode::BACKQUOTE
+  %autogen __KeyToKey__ KeyCode::KEY_2,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,                             KeyCode::JIS_ATMARK
+  %autogen __KeyToKey__ KeyCode::KEY_3,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_3
+  %autogen __KeyToKey__ KeyCode::KEY_4,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_4
+  %autogen __KeyToKey__ KeyCode::KEY_5,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,                             KeyCode::JIS_YEN
   /上段 右手 数字キー
-  %autogen __KeyToKey__ KeyCode::KEY_6,     ModifierFlag::{{MIDDLE}},                             KeyCode::JIS_HAT
-  %autogen __KeyToKey__ KeyCode::KEY_7,     ModifierFlag::{{MIDDLE}},                             KeyCode::QUOTE
-  %autogen __KeyToKey__ KeyCode::KEY_8,     ModifierFlag::{{MIDDLE}}, KeyCode::VK_STICKY_SHIFT_L, KeyCode::QUOTE
-  %autogen __KeyToKey__ KeyCode::KEY_9,     ModifierFlag::{{MIDDLE}}, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_8
-  %autogen __KeyToKey__ KeyCode::KEY_0,     ModifierFlag::{{MIDDLE}}, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_9
-  %autogen __KeyToKey__ KeyCode::MINUS,     ModifierFlag::{{MIDDLE}},                             KeyCode::JIS_COLON
-  %autogen __KeyToKey__ KeyCode::EQUAL,     ModifierFlag::{{MIDDLE}},                             KeyCode::SEMICOLON
+  %autogen __KeyToKey__ KeyCode::KEY_6,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,                             KeyCode::JIS_HAT
+  %autogen __KeyToKey__ KeyCode::KEY_7,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,                             KeyCode::QUOTE
+  %autogen __KeyToKey__ KeyCode::KEY_8,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::VK_STICKY_SHIFT_L, KeyCode::QUOTE
+  %autogen __KeyToKey__ KeyCode::KEY_9,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_8
+  %autogen __KeyToKey__ KeyCode::KEY_0,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_9
+  %autogen __KeyToKey__ KeyCode::MINUS,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,                             KeyCode::JIS_COLON
+  %autogen __KeyToKey__ KeyCode::EQUAL,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,                             KeyCode::SEMICOLON
 
   /ぼごれよ！|ぐちュせめづ　　
   /上段 左手
-  %autogen __KeyToKey__ KeyCode::Q, ModifierFlag::{{MIDDLE}}, KeyCode::MINUS, KeyCode::BRACKET_LEFT
-  %autogen __KeyToKey__ KeyCode::W, ModifierFlag::{{MIDDLE}}, KeyCode::B, KeyCode::BRACKET_LEFT
-  %autogen __KeyToKey__ KeyCode::E, ModifierFlag::{{MIDDLE}}, KeyCode::SEMICOLON
-  %autogen __KeyToKey__ KeyCode::R, ModifierFlag::{{MIDDLE}}, KeyCode::KEY_9
-  %autogen __KeyToKey__ KeyCode::T, ModifierFlag::{{MIDDLE}}, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_1, KeyCode::F9
+  %autogen __KeyToKey__ KeyCode::Q, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::MINUS, KeyCode::BRACKET_LEFT
+  %autogen __KeyToKey__ KeyCode::W, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::B, KeyCode::BRACKET_LEFT
+  %autogen __KeyToKey__ KeyCode::E, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::SEMICOLON
+  %autogen __KeyToKey__ KeyCode::R, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::KEY_9
+  %autogen __KeyToKey__ KeyCode::T, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_1, KeyCode::F9
   /上段 右手
-  %autogen __KeyToKey__ KeyCode::Y, ModifierFlag::{{MIDDLE}}, KeyCode::H, KeyCode::BRACKET_LEFT
-  %autogen __KeyToKey__ KeyCode::U, ModifierFlag::{{MIDDLE}}, KeyCode::A
-  %autogen __KeyToKey__ KeyCode::I, ModifierFlag::{{MIDDLE}}, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_8
-  %autogen __KeyToKey__ KeyCode::O, ModifierFlag::{{MIDDLE}}, KeyCode::P
-  %autogen __KeyToKey__ KeyCode::P, ModifierFlag::{{MIDDLE}}, KeyCode::SLASH
-  %autogen __KeyToKey__ KeyCode::BRACKET_LEFT, ModifierFlag::{{MIDDLE}}, KeyCode::Z, KeyCode::BRACKET_LEFT
-  -#%autogen __KeyToKey__ KeyCode::BRACKET_RIGHT, ModifierFlag::{{MIDDLE}}, KeyCode::VK_NONE
-  -#%autogen __KeyToKey__ KeyCode::BACKSLASH,     ModifierFlag::{{MIDDLE}}, KeyCode::VK_NONE
+  %autogen __KeyToKey__ KeyCode::Y, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::H, KeyCode::BRACKET_LEFT
+  %autogen __KeyToKey__ KeyCode::U, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::A
+  %autogen __KeyToKey__ KeyCode::I, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_8
+  %autogen __KeyToKey__ KeyCode::O, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::P
+  %autogen __KeyToKey__ KeyCode::P, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::SLASH
+  %autogen __KeyToKey__ KeyCode::BRACKET_LEFT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::Z, KeyCode::BRACKET_LEFT
+  -#%autogen __KeyToKey__ KeyCode::BRACKET_RIGHT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::VK_NONE
+  -#%autogen __KeyToKey__ KeyCode::BACKSLASH,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::VK_NONE
 
   /えあおがを|わらりみそぬ
   /中段 左手
-  %autogen __KeyToKey__ KeyCode::A, ModifierFlag::{{MIDDLE}}, KeyCode::KEY_5
-  %autogen __KeyToKey__ KeyCode::S, ModifierFlag::{{MIDDLE}}, KeyCode::KEY_3
-  %autogen __KeyToKey__ KeyCode::D, ModifierFlag::{{MIDDLE}}, KeyCode::KEY_6
-  %autogen __KeyToKey__ KeyCode::F, ModifierFlag::{{MIDDLE}}, KeyCode::T, KeyCode::BRACKET_LEFT
-  %autogen __KeyToKey__ KeyCode::G, ModifierFlag::{{MIDDLE}}, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_0
+  %autogen __KeyToKey__ KeyCode::A, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::KEY_5
+  %autogen __KeyToKey__ KeyCode::S, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::KEY_3
+  %autogen __KeyToKey__ KeyCode::D, ModifierFlag::SHIFT_L, KeyCode::KEY_6
+  %autogen __KeyToKey__ KeyCode::F, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::T, KeyCode::BRACKET_LEFT
+  %autogen __KeyToKey__ KeyCode::G, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_0
   /中段 右手
-  %autogen __KeyToKey__ KeyCode::H,         ModifierFlag::{{MIDDLE}}, KeyCode::KEY_0
-  %autogen __KeyToKey__ KeyCode::J,         ModifierFlag::{{MIDDLE}}, KeyCode::O
-  %autogen __KeyToKey__ KeyCode::K,         ModifierFlag::{{MIDDLE}}, KeyCode::L
-  %autogen __KeyToKey__ KeyCode::L,         ModifierFlag::{{MIDDLE}}, KeyCode::N
-  %autogen __KeyToKey__ KeyCode::SEMICOLON, ModifierFlag::{{MIDDLE}}, KeyCode::C
-  %autogen __KeyToKey__ KeyCode::QUOTE,     ModifierFlag::{{MIDDLE}}, KeyCode::KEY_1
+  %autogen __KeyToKey__ KeyCode::H,         MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::KEY_0
+  %autogen __KeyToKey__ KeyCode::J,         MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::O
+  %autogen __KeyToKey__ KeyCode::K,         ModifierFlag::SHIFT_R, KeyCode::L
+  %autogen __KeyToKey__ KeyCode::L,         ModifierFlag::SHIFT_R, KeyCode::N
+  %autogen __KeyToKey__ KeyCode::SEMICOLON, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::C
+  %autogen __KeyToKey__ KeyCode::QUOTE,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::KEY_1
 
   /ゆねげほろ|ャふやべび
   /下段 左手
-  %autogen __KeyToKey__ KeyCode::Z, ModifierFlag::{{MIDDLE}}, KeyCode::KEY_8
-  %autogen __KeyToKey__ KeyCode::X, ModifierFlag::{{MIDDLE}}, KeyCode::COMMA
-  %autogen __KeyToKey__ KeyCode::C, ModifierFlag::{{MIDDLE}}, KeyCode::QUOTE, KeyCode::BRACKET_LEFT
-  %autogen __KeyToKey__ KeyCode::V, ModifierFlag::{{MIDDLE}}, KeyCode::MINUS
-  %autogen __KeyToKey__ KeyCode::B, ModifierFlag::{{MIDDLE}}, KeyCode::BACKQUOTE
+  %autogen __KeyToKey__ KeyCode::Z, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::KEY_8
+  %autogen __KeyToKey__ KeyCode::X, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::COMMA
+  %autogen __KeyToKey__ KeyCode::C, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::QUOTE, KeyCode::BRACKET_LEFT
+  %autogen __KeyToKey__ KeyCode::V, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::MINUS
+  %autogen __KeyToKey__ KeyCode::B, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::BACKQUOTE
   /下段 右手
-  %autogen __KeyToKey__ KeyCode::N,     ModifierFlag::{{MIDDLE}}, KeyCode::VK_STICKY_SHIFT_L,  KeyCode::KEY_7
-  %autogen __KeyToKey__ KeyCode::M,     ModifierFlag::{{MIDDLE}}, KeyCode::KEY_2
-  %autogen __KeyToKey__ KeyCode::COMMA, ModifierFlag::{{MIDDLE}}, KeyCode::KEY_7
-  %autogen __KeyToKey__ KeyCode::DOT,   ModifierFlag::{{MIDDLE}}, KeyCode::EQUAL, KeyCode::BRACKET_LEFT
-  %autogen __KeyToKey__ KeyCode::SLASH, ModifierFlag::{{MIDDLE}}, KeyCode::V, KeyCode::BRACKET_LEFT
+  %autogen __KeyToKey__ KeyCode::N,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::VK_STICKY_SHIFT_L,  KeyCode::KEY_7
+  %autogen __KeyToKey__ KeyCode::M,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::KEY_2
+  %autogen __KeyToKey__ KeyCode::COMMA, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::KEY_7
+  %autogen __KeyToKey__ KeyCode::DOT,   MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::EQUAL, KeyCode::BRACKET_LEFT
+  %autogen __KeyToKey__ KeyCode::SLASH, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::V, KeyCode::BRACKET_LEFT
