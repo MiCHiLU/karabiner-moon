@@ -43,9 +43,11 @@
   /えあおがを|わらりみそぬ
   /中段 左手
   %autogen __KeyToKey__ KeyCode::A, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::KEY_5
-  %autogen __KeyToKey__ KeyCode::S, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::KEY_3
+  %autogen __KeyToKey__ KeyCode::S, ModifierFlag::SHIFT_L, KeyCode::KEY_3
+  %autogen __KeyToKey__ KeyCode::S, ModifierFlag::SHIFT_R, KeyCode::VK_STICKY_SHIFT_L, KeyCode::EQUAL
   %autogen __KeyToKey__ KeyCode::D, ModifierFlag::SHIFT_L, KeyCode::KEY_6
-  %autogen __KeyToKey__ KeyCode::F, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::T, KeyCode::BRACKET_LEFT
+  %autogen __KeyToKey__ KeyCode::F, ModifierFlag::SHIFT_L, KeyCode::T, KeyCode::BRACKET_LEFT
+  %autogen __KeyToKey__ KeyCode::F, ModifierFlag::SHIFT_R, KeyCode::VK_STICKY_SHIFT_L, KeyCode::BRACKET_LEFT
   %autogen __KeyToKey__ KeyCode::G, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_0
   /中段 右手
   %autogen __KeyToKey__ KeyCode::H,         MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::KEY_0
