@@ -5,44 +5,6 @@
 
   /シフトなし
 
-  /シフトキー
-  %block
-    %lastpressedphysicalkey_only KeyCode::D
-    %elapsedtimesincelastreleased_lessthan Millisecond::RawValue::600
-    %autogen
-      __KeyDownUpToKey__ KeyCode::D, ModifierFlag::NONE,
-      KeyCode::VK_WAIT_100MS, KeyCode::VK_WAIT_100MS, KeyCode::VK_WAIT_100MS, KeyCode::VK_WAIT_100MS,
-      KeyCode::VK_STICKY_SHIFT_L, KeyCode::COMMA
-  %block
-    %lastpressedphysicalkey_only KeyCode::K
-    %elapsedtimesincelastreleased_lessthan Millisecond::RawValue::600
-    %autogen
-      __KeyDownUpToKey__ KeyCode::K, ModifierFlag::NONE,
-      KeyCode::VK_WAIT_100MS, KeyCode::VK_WAIT_100MS, KeyCode::VK_WAIT_100MS, KeyCode::VK_WAIT_100MS,
-      KeyCode::VK_STICKY_SHIFT_L, KeyCode::DOT
-  %block
-    %lastpressedphysicalkey_only KeyCode::L
-    %elapsedtimesincelastreleased_lessthan Millisecond::RawValue::600
-    %autogen
-      __KeyDownUpToKey__ KeyCode::L, ModifierFlag::NONE,
-      KeyCode::VK_WAIT_100MS, KeyCode::VK_WAIT_100MS, KeyCode::VK_WAIT_100MS, KeyCode::VK_WAIT_100MS,
-      KeyCode::VK_STICKY_SHIFT_L, KeyCode::SLASH, KeyCode::F9
-
-  %block
-    %elapsedtimesincelastreleased_greaterthan Millisecond::RawValue::600
-    %autogen
-      __KeyDownUpToKey__ KeyCode::D, ModifierFlag::NONE,
-      KeyCode::VK_WAIT_100MS, KeyCode::VK_WAIT_100MS, KeyCode::VK_WAIT_100MS, KeyCode::VK_WAIT_100MS,
-      KeyCode::VK_STICKY_SHIFT_L, KeyCode::COMMA
-    %autogen
-      __KeyDownUpToKey__ KeyCode::K, ModifierFlag::NONE,
-      KeyCode::VK_WAIT_100MS, KeyCode::VK_WAIT_100MS, KeyCode::VK_WAIT_100MS, KeyCode::VK_WAIT_100MS,
-      KeyCode::VK_STICKY_SHIFT_L, KeyCode::DOT
-    %autogen
-      __KeyDownUpToKey__ KeyCode::L, ModifierFlag::NONE,
-      KeyCode::VK_WAIT_100MS, KeyCode::VK_WAIT_100MS, KeyCode::VK_WAIT_100MS, KeyCode::VK_WAIT_100MS,
-      KeyCode::VK_STICKY_SHIFT_L, KeyCode::SLASH, KeyCode::F9
-
   /`12345|67890-=
   /上段 数字キー 左手
   %autogen __KeyToKey__ KeyCode::BACKQUOTE, ModifierFlag::NONE, KeyCode::BACKQUOTE, KeyCode::F10
@@ -79,18 +41,25 @@
 
   /のと、かこ|くう。？なひ
   /中段 左手
-  %autogen __KeyToKey__ KeyCode::A, ModifierFlag::NONE, KeyCode::K
-  %autogen __KeyToKey__ KeyCode::S, ModifierFlag::NONE, KeyCode::S
-  %autogen __KeyToKey__ KeyCode::D, ModifierFlag::NONE, KeyCode::VK_NONE
+  %autogen __KeyToKey__ KeyCode::A, ModifierFlag::NONE,     KeyCode::K
+  %autogen __KeyToKey__ KeyCode::S, ModifierFlag::NONE,     KeyCode::S
+  %autogen __KeyToKey__ KeyCode::D, ModifierFlag::NONE,     KeyCode::VK_NONE
+  %autogen __KeyToKey__ KeyCode::D, ModifierFlag::SHIFT_L,  KeyCode::VK_STICKY_SHIFT_L, KeyCode::COMMA
+  %autogen __KeyToKey__ KeyCode::D, ModifierFlag::SHIFT_R,  KeyCode::VK_STICKY_SHIFT_L, KeyCode::COMMA
+
   %autogen __KeyToKey__ KeyCode::F, ModifierFlag::NONE, KeyCode::T
   %autogen __KeyToKey__ KeyCode::G, ModifierFlag::NONE, KeyCode::B
   /中段 右手
-  %autogen __KeyToKey__ KeyCode::H,         ModifierFlag::NONE, KeyCode::H
-  %autogen __KeyToKey__ KeyCode::J,         ModifierFlag::NONE, KeyCode::KEY_4
-  %autogen __KeyToKey__ KeyCode::K,         ModifierFlag::NONE, KeyCode::VK_NONE
-  %autogen __KeyToKey__ KeyCode::L,         ModifierFlag::NONE, KeyCode::VK_NONE
-  %autogen __KeyToKey__ KeyCode::SEMICOLON, ModifierFlag::NONE, KeyCode::U
-  %autogen __KeyToKey__ KeyCode::QUOTE,     ModifierFlag::NONE, KeyCode::V
+  %autogen __KeyToKey__ KeyCode::H,         ModifierFlag::NONE,     KeyCode::H
+  %autogen __KeyToKey__ KeyCode::J,         ModifierFlag::NONE,     KeyCode::KEY_4
+  %autogen __KeyToKey__ KeyCode::K,         ModifierFlag::NONE,     KeyCode::VK_NONE
+  %autogen __KeyToKey__ KeyCode::K,         ModifierFlag::SHIFT_L,  KeyCode::VK_STICKY_SHIFT_L, KeyCode::DOT
+  %autogen __KeyToKey__ KeyCode::K,         ModifierFlag::SHIFT_R,  KeyCode::VK_STICKY_SHIFT_L, KeyCode::DOT
+  %autogen __KeyToKey__ KeyCode::L,         ModifierFlag::NONE,     KeyCode::VK_NONE
+  %autogen __KeyToKey__ KeyCode::L,         ModifierFlag::SHIFT_L,  KeyCode::VK_STICKY_SHIFT_L, KeyCode::SLASH, KeyCode::F9
+  %autogen __KeyToKey__ KeyCode::L,         ModifierFlag::SHIFT_R,  KeyCode::VK_STICKY_SHIFT_L, KeyCode::SLASH, KeyCode::F9
+  %autogen __KeyToKey__ KeyCode::SEMICOLON, ModifierFlag::NONE,     KeyCode::U
+  %autogen __KeyToKey__ KeyCode::QUOTE,     ModifierFlag::NONE,     KeyCode::V
 
   /すはにでさ|まるきもー
   /下段 左手
