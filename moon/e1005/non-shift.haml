@@ -43,16 +43,32 @@
   /中段 左手
   %autogen __KeyToKey__ KeyCode::A,       ModifierFlag::NONE,                             KeyCode::K
   %autogen __KeyToKey__ KeyCode::S,       ModifierFlag::NONE,                             KeyCode::S
-  %autogen __KeyDownUpToKey__ KeyCode::D, ModifierFlag::NONE, KeyCode::VK_STICKY_SHIFT_L, KeyCode::COMMA
+  -#%autogen __KeyDownUpToKey__ KeyCode::D, ModifierFlag::NONE, KeyCode::VK_STICKY_SHIFT_L, KeyCode::COMMA
   %autogen __KeyToKey__ KeyCode::F,       ModifierFlag::NONE,                             KeyCode::T
   %autogen __KeyToKey__ KeyCode::G,       ModifierFlag::NONE,                             KeyCode::B
   /中段 右手
   %autogen __KeyToKey__ KeyCode::H,         ModifierFlag::NONE,                             KeyCode::H
   %autogen __KeyToKey__ KeyCode::J,         ModifierFlag::NONE,                             KeyCode::KEY_4
-  %autogen __KeyDownUpToKey__ KeyCode::K,   ModifierFlag::NONE, KeyCode::VK_STICKY_SHIFT_L, KeyCode::DOT
-  %autogen __KeyDownUpToKey__ KeyCode::L,   ModifierFlag::NONE, KeyCode::VK_STICKY_SHIFT_L, KeyCode::SLASH, KeyCode::F9
+  -#%autogen __KeyDownUpToKey__ KeyCode::K,   ModifierFlag::NONE, KeyCode::VK_STICKY_SHIFT_L, KeyCode::DOT
+  -#%autogen __KeyDownUpToKey__ KeyCode::L,   ModifierFlag::NONE, KeyCode::VK_STICKY_SHIFT_L, KeyCode::SLASH, KeyCode::F9
   %autogen __KeyToKey__ KeyCode::SEMICOLON, ModifierFlag::NONE,                             KeyCode::U
   %autogen __KeyToKey__ KeyCode::QUOTE,     ModifierFlag::NONE,                             KeyCode::V
+
+  /シフトキー
+  %block
+    %elapsedtimesincelastreleased_greaterthan Millisecond::RawValue::1000
+    %autogen
+      __KeyDownUpToKey__ KeyCode::D, ModifierFlag::NONE,
+      KeyCode::VK_WAIT_100MS, KeyCode::VK_WAIT_100MS, KeyCode::VK_WAIT_100MS, KeyCode::VK_WAIT_100MS, KeyCode::VK_WAIT_100MS,
+      KeyCode::VK_STICKY_SHIFT_L, KeyCode::COMMA
+    %autogen
+      __KeyDownUpToKey__ KeyCode::K, ModifierFlag::NONE,
+      KeyCode::VK_WAIT_100MS, KeyCode::VK_WAIT_100MS, KeyCode::VK_WAIT_100MS, KeyCode::VK_WAIT_100MS, KeyCode::VK_WAIT_100MS,
+      KeyCode::VK_STICKY_SHIFT_L, KeyCode::DOT
+    %autogen
+      __KeyDownUpToKey__ KeyCode::L, ModifierFlag::NONE,
+      KeyCode::VK_WAIT_100MS, KeyCode::VK_WAIT_100MS, KeyCode::VK_WAIT_100MS, KeyCode::VK_WAIT_100MS, KeyCode::VK_WAIT_100MS,
+      KeyCode::VK_STICKY_SHIFT_L, KeyCode::SLASH, KeyCode::F9
 
   /すはにでさ|まるきもー
   /下段 左手
