@@ -7,21 +7,22 @@
   /中指シフト
 
   /　～＠＃＄￥|＾’＊（）；：
+  /　〜＠＃＄￥|＾＆＊（）；：
   /上段 数字キー 左手
   %autogen __KeyToKey__ KeyCode::BACKQUOTE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::VK_NONE
   %autogen __KeyToKey__ KeyCode::KEY_1,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::VK_STICKY_SHIFT_L, KeyCode::BACKQUOTE
-  %autogen __KeyToKey__ KeyCode::KEY_2,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION,                             KeyCode::JIS_ATMARK
-  %autogen __KeyToKey__ KeyCode::KEY_3,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_3
-  %autogen __KeyToKey__ KeyCode::KEY_4,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_4
-  %autogen __KeyToKey__ KeyCode::KEY_5,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION,                             KeyCode::JIS_YEN
+  %autogen __KeyToKey__ KeyCode::KEY_2,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::VK_STICKY_OPTION_L, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_2
+  %autogen __KeyToKey__ KeyCode::KEY_3,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::VK_STICKY_OPTION_L, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_3
+  %autogen __KeyToKey__ KeyCode::KEY_4,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::VK_STICKY_OPTION_L, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_4
+  %autogen __KeyToKey__ KeyCode::KEY_5,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::VK_STICKY_OPTION_L, KeyCode::BACKSLASH
   /上段 数字キー 右手
-  %autogen __KeyToKey__ KeyCode::KEY_6,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION,                             KeyCode::JIS_HAT
-  %autogen __KeyToKey__ KeyCode::KEY_7,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION,                             KeyCode::QUOTE
-  %autogen __KeyToKey__ KeyCode::KEY_8,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::VK_STICKY_SHIFT_L, KeyCode::QUOTE
-  %autogen __KeyToKey__ KeyCode::KEY_9,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_8
-  %autogen __KeyToKey__ KeyCode::KEY_0,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_9
-  %autogen __KeyToKey__ KeyCode::MINUS,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION,                             KeyCode::JIS_COLON
-  %autogen __KeyToKey__ KeyCode::EQUAL,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION,                             KeyCode::SEMICOLON
+  %autogen __KeyToKey__ KeyCode::KEY_6,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::VK_STICKY_OPTION_L, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_6
+  %autogen __KeyToKey__ KeyCode::KEY_7,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::VK_STICKY_OPTION_L, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_7
+  %autogen __KeyToKey__ KeyCode::KEY_8,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::VK_STICKY_OPTION_L, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_8
+  %autogen __KeyToKey__ KeyCode::KEY_9,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::VK_STICKY_OPTION_L, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_9
+  %autogen __KeyToKey__ KeyCode::KEY_0,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::VK_STICKY_OPTION_L, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_0
+  %autogen __KeyToKey__ KeyCode::MINUS,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::VK_STICKY_OPTION_L, KeyCode::SEMICOLON
+  %autogen __KeyToKey__ KeyCode::EQUAL,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::VK_STICKY_OPTION_L, KeyCode::VK_STICKY_SHIFT_L, KeyCode::SEMICOLON
 
   /ぼごれよ！|ぐちュせめづ　　
   /上段 左手
@@ -64,9 +65,9 @@
   %autogen __KeyToKey__ KeyCode::X, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::COMMA
   %autogen __KeyToKey__ KeyCode::C, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::QUOTE, KeyCode::BRACKET_LEFT
   %autogen __KeyToKey__ KeyCode::V, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::MINUS
-  %autogen __KeyToKey__ KeyCode::B, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::BACKQUOTE
   -# inputsource_only Google IME
-  %autogen __KeyToKey__ KeyCode::B, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::BACKQUOTE
+  -#%autogen __KeyToKey__ KeyCode::B, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::BACKQUOTE
+  %autogen __KeyToKey__ KeyCode::B, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::VK_STICKY_SHIFT_L, KeyCode::QUOTE
   /下段 右手
   %autogen __KeyToKey__ KeyCode::N,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::VK_STICKY_SHIFT_L,  KeyCode::KEY_7
   %autogen __KeyToKey__ KeyCode::M,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::KEY_2
