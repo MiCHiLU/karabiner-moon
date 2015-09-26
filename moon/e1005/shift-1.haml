@@ -25,20 +25,20 @@
 
   /ぼごれよ！|ぐちュせめづ　　
   /上段 左手
-  %autogen __KeyToKey__ KeyCode::Q, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::MINUS, KeyCode::BRACKET_LEFT
-  %autogen __KeyToKey__ KeyCode::W, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::B, KeyCode::BRACKET_LEFT
-  %autogen __KeyToKey__ KeyCode::E, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::SEMICOLON
-  %autogen __KeyToKey__ KeyCode::R, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::KEY_9
-  %autogen __KeyToKey__ KeyCode::T, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_1, KeyCode::F9
+  %autogen __KeyToKey__ KeyCode::Q, ModifierFlag::OPTION_L, KeyCode::MINUS, KeyCode::BRACKET_LEFT
+  %autogen __KeyToKey__ KeyCode::W, ModifierFlag::OPTION_L, KeyCode::B, KeyCode::BRACKET_LEFT
+  %autogen __KeyToKey__ KeyCode::E, ModifierFlag::OPTION_L, KeyCode::SEMICOLON
+  %autogen __KeyToKey__ KeyCode::R, ModifierFlag::OPTION_L, KeyCode::KEY_9
+  %autogen __KeyToKey__ KeyCode::T, ModifierFlag::OPTION_L, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_1, KeyCode::F9
   /上段 右手
-  %autogen __KeyToKey__ KeyCode::Y, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::H, KeyCode::BRACKET_LEFT
-  %autogen __KeyToKey__ KeyCode::U, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::A
-  %autogen __KeyToKey__ KeyCode::I, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_8
-  %autogen __KeyToKey__ KeyCode::O, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::P
-  %autogen __KeyToKey__ KeyCode::P, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::SLASH
-  %autogen __KeyToKey__ KeyCode::BRACKET_LEFT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::Z, KeyCode::BRACKET_LEFT
-  -#%autogen __KeyToKey__ KeyCode::BRACKET_RIGHT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::VK_NONE
-  -#%autogen __KeyToKey__ KeyCode::BACKSLASH,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::VK_NONE
+  %autogen __KeyToKey__ KeyCode::Y, ModifierFlag::OPTION_L, KeyCode::H, KeyCode::BRACKET_LEFT
+  %autogen __KeyToKey__ KeyCode::U, ModifierFlag::OPTION_L, KeyCode::A
+  %autogen __KeyToKey__ KeyCode::I, ModifierFlag::OPTION_L, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_8
+  %autogen __KeyToKey__ KeyCode::O, ModifierFlag::OPTION_L, KeyCode::P
+  %autogen __KeyToKey__ KeyCode::P, ModifierFlag::OPTION_L, KeyCode::SLASH
+  %autogen __KeyToKey__ KeyCode::BRACKET_LEFT, ModifierFlag::OPTION_L, KeyCode::Z, KeyCode::BRACKET_LEFT
+  -#%autogen __KeyToKey__ KeyCode::BRACKET_RIGHT, ModifierFlag::OPTION_L, KeyCode::VK_NONE
+  -#%autogen __KeyToKey__ KeyCode::BACKSLASH,     ModifierFlag::OPTION_L, KeyCode::VK_NONE
 
   /えあおがを|わらりみそぬ
   /中段 左手
@@ -54,6 +54,7 @@
   %autogen __KeyToKey__ KeyCode::J,         MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::O
   %autogen __KeyToKey__ KeyCode::K,         ModifierFlag::OPTION_R, KeyCode::L
   %autogen __KeyToKey__ KeyCode::L,         ModifierFlag::OPTION_R, KeyCode::N
+  %autogen __KeyToKey__ KeyCode::L,         ModifierFlag::OPTION_L, KeyCode::SHIFT_R
   %autogen __KeyToKey__ KeyCode::SEMICOLON, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::C
   %autogen __KeyToKey__ KeyCode::QUOTE,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::KEY_1
 
@@ -63,7 +64,10 @@
   %autogen __KeyToKey__ KeyCode::X, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::COMMA
   %autogen __KeyToKey__ KeyCode::C, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::QUOTE, KeyCode::BRACKET_LEFT
   %autogen __KeyToKey__ KeyCode::V, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::MINUS
+  -# Google IME
   %autogen __KeyToKey__ KeyCode::B, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::BACKQUOTE
+  -# kotoeri
+  -#%autogen __KeyToKey__ KeyCode::B, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::BACKQUOTE
   /下段 右手
   %autogen __KeyToKey__ KeyCode::N,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::VK_STICKY_SHIFT_L,  KeyCode::KEY_7
   %autogen __KeyToKey__ KeyCode::M,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::KEY_2
