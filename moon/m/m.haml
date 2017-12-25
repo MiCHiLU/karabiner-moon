@@ -11,13 +11,29 @@
     %inputmode_only JAPANESE
     %not PASSWORD
 
+    -#%replacementdef
+      %replacementname US_@
+      %replacementvalue
+        KeyCode::KEY_2,
+        MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION
+
+    %include(path='keys.xml')
+      %replacementdef
+        %replacementname SHIFT_FLAG
+        %replacementvalue Shift0_
+      %replacementdef
+        %replacementname MODIFIER_FLAG
+        %replacementvalue
+
+    -#%autogen __KeyToKey__ {{US_@}},{{＠}}
+
     /中指シフト
 
     /　〜＠＃＄￥|＾＆＊（）；：
     /上段 数字キー 左手
     %autogen __KeyToKey__ KeyCode::BACKQUOTE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::VK_NONE
     %autogen __KeyToKey__ KeyCode::KEY_1,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::VK_STICKY_SHIFT_L, KeyCode::BACKQUOTE
-    %autogen __KeyToKey__ KeyCode::KEY_2,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::VK_STICKY_OPTION_L, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_2
+    //%autogen __KeyToKey__ KeyCode::KEY_2,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::VK_STICKY_OPTION_L, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_2
     %autogen __KeyToKey__ KeyCode::KEY_3,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::VK_STICKY_OPTION_L, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_3
     %autogen __KeyToKey__ KeyCode::KEY_4,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::VK_STICKY_OPTION_L, KeyCode::VK_STICKY_SHIFT_L, KeyCode::KEY_4
     %autogen __KeyToKey__ KeyCode::KEY_5,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::VK_STICKY_OPTION_L, KeyCode::BACKSLASH
@@ -220,7 +236,8 @@
 
     /｀１２３４５６７８９０－＝
     /上段 数字キー 左手
-    %autogen __KeyToKey__ KeyCode::BACKQUOTE, ModifierFlag::NONE, KeyCode::VK_STICKY_OPTION_L, KeyCode::BACKQUOTE
+    %autogen __KeyToKey__ {{Shift0_BACKQUOTE}}, KeyCode::VK_STICKY_OPTION_L, KeyCode::BACKQUOTE
+    //%autogen __KeyToKey__ KeyCode::BACKQUOTE, ModifierFlag::NONE, KeyCode::VK_STICKY_OPTION_L, KeyCode::BACKQUOTE
     %autogen __KeyToKey__ KeyCode::KEY_1,     ModifierFlag::NONE, KeyCode::VK_STICKY_OPTION_L, KeyCode::KEY_1
     %autogen __KeyToKey__ KeyCode::KEY_2,     ModifierFlag::NONE, KeyCode::VK_STICKY_OPTION_L, KeyCode::KEY_2
     %autogen __KeyToKey__ KeyCode::KEY_3,     ModifierFlag::NONE, KeyCode::VK_STICKY_OPTION_L, KeyCode::KEY_3
